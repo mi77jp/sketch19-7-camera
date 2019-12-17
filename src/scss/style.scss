@@ -1,0 +1,89 @@
+$baseColor: #222;
+
+body {
+  background: $baseColor;
+  font-family: 'Merriweather', serif;
+
+  a {
+    display: block;
+    margin: 0 24px 24px 0;
+    color: skyblue;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: skyblue;
+    opacity: 0.7;
+  }
+  a:visited {
+    color: skyblue;
+  }
+  *:focus {
+    outline: none;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+
+    canvas {
+      display: block;
+    }
+  }
+
+  #canvas1 {
+    width: 240px;
+    height: 180px;
+    margin-top: 50px;
+    display: none;
+  }
+
+  .mode-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+
+    > a {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 1.8;
+      text-transform: uppercase;
+    }
+  }
+
+  .wrapper, .img-wrapper {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+  }
+
+  .img-wrapper {
+    opacity: .3;
+  }
+
+  #video {
+    display: block;
+    transform: scale(-1, 1);
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+    background-color: #333;
+  }
+
+  #canvasPreview {
+    transform: scale(-1, 1);
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+    background-color: #333;
+
+    > canvas {
+      display: block;
+    }
+  }
+}

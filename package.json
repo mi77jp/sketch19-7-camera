@@ -1,0 +1,33 @@
+{
+  "name": "sketch19-3-particle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mi77jp/skech19-5-vision.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mi77jp/skech19-5-vision/issues"
+  },
+  "homepage": "https://github.com/mi77jp/skech19-5-vision#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "dat.gui": "^0.7.6",
+    "gh-pages": "^2.1.1",
+    "ngx-face-api-js": "^0.1.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.23.3",
+    "three": "^0.110.0",
+    "three-orbit-controls": "^82.1.0"
+  }
+}
